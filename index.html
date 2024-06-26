@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Books</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+    <header class="main_header">
+        <div class="menu_logo_box">
+            <img class="menu_img" src="./img/Menu.png" alt="menu">
+            <img class="logo_img" src="./img/Logo.svg" alt="logo">
+        </div>
+        <div class="fav_buy_prof_box">
+            <img class="favorite_img" src="./img/Favoritos.svg" alt="favorite">
+            <img class="buy_img" src="./img/Compras.svg" alt="buy">
+            <img class="profile_img" src="./img/Usuário.svg" alt="profile">
+        </div>
+    </header>
+    <section class="main_container">
+        <section class="baseboard_box">
+            <p class="baseboard_title_main">
+                Já sabe por onde começar?
+            </p>
+            <p class="baseboard_title_second">
+                Encontre em nossa estante o que precisa para seu desenvolvimento!
+            </p>
+            <input type="text" placeholder="Qual será sua próxima leitura?" >
+        </section>
+        <p class="main_text_section">NOVOS LANÇAMENTOS</p>
+        <section class="section_main_container">
+            
+            <div class="swiper">
+                <div class="swiper-pagination"></div>
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="./img/Book0.svg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/Book0.svg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/Book0.svg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/Book0.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="main_extra">
+                <div class="info-left">
+                    
+                </div>
+                <div class="info-right"></div>
+            </div>
+        </section>
+    </section>
+    <footer>frr</footer>
+
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+      
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            speed: 500,
+            spaceBetween: 10,
+
+            slidesPerView: 2, // ou o número desejado de slides visíveis
+            centeredSlides: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+                
+            },
+
+            // And if we need scrollbar
+     
+        });
+    </script>
+</body>
+</html>
