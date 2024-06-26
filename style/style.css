@@ -22,6 +22,7 @@ header {
     align-items: center;
 
     margin-left: 24px;
+    padding: 20px 0;
 }
 .menu_img, .favorite_img, .buy_img, .profile_img {
     width: 46px;
