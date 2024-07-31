@@ -11,7 +11,7 @@
 <body>
     <header class="main_header">
         <div class="menu_logo_box">
-            <img class="menu_img" src="./img/Menu.png" alt="menu">
+            <img class="menu_img" src="./img/Menu.png" alt="menu" onclick="changeMenu()">
             <img class="logo_img" src="./img/Logo.svg" alt="logo">
         </div>
         <div class="fav_buy_prof_box">
@@ -20,6 +20,7 @@
             <img class="profile_img" src="./img/Usuário.svg" alt="profile">
         </div>
     </header>
+    <section class="menu_box menu_none"></section>
     <section class="main_container">
         <section class="baseboard_box">
             <p class="baseboard_title_main">
@@ -31,36 +32,102 @@
             <input type="text" placeholder="Qual será sua próxima leitura?" >
         </section>
         <p class="main_text_section">NOVOS LANÇAMENTOS</p>
-        <section class="section_main_container">
-            
+        <section class="section_main_container">   
             <div class="swiper">
                 <div class="swiper-pagination"></div>
-                <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
-                    <!-- Slides -->
                     <div class="swiper-slide">
-                        <img src="./img/Book0.svg" alt="">
+                        <img src="./img/Book1.svg" alt="">
                     </div>
                     <div class="swiper-slide">
                         <img src="./img/Book0.svg" alt="">
                     </div>
                     <div class="swiper-slide">
-                        <img src="./img/Book0.svg" alt="">
+                        <img src="./img/Book1.svg" alt="">
                     </div>
                     <div class="swiper-slide">
-                        <img src="./img/Book0.svg" alt="">
+                        <img src="./img/Book3.svg" alt="">
                     </div>
                 </div>
             </div>
             <div class="main_extra">
                 <div class="info-left">
-                    
+                    <p class="info_tema_title">Talvez você também se interesse por...</p>
+                    <p class="info_tema_topic">Angular 11 e Firebase</p>
+                    <p class="info_tema_content">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                    <div class="info_icon">
+                        <img class="favorite_img" src="./img/Favoritos.svg" alt="favorite">
+                        <img class="buy_img" src="./img/Compras.svg" alt="buy">
+                    </div>
                 </div>
-                <div class="info-right"></div>
+                <div class="info-right">
+                    <img class="info_img" src="./img/Angular.svg" alt="">
+                    <button class="info_button">Saiba mais</button>
+                </div>
             </div>
         </section>
+        <p class="main_text_section">MAIS VENDIDOS</p>
+        <section class="section_main_container">   
+            <div class="swiper">
+                <div class="swiper-pagination"></div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./img/Book1.svg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/Book0.svg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/Book1.svg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/Book3.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="main_extra">
+                <div class="info-left">
+                    <div class="info_tema_title_image">
+                        <img class="info_tema_image" src="./img/Estrelinhas.svg" alt="">
+                        <p class="info_tema_title">Autora do Mês</p>
+                    </div>
+                    <p class="info_tema_topic">Juliana Agarikov</p>
+                    <p class="info_tema_content">Analista de sistemas e escritora, Juliana é especialista em Front-End.</p>
+                    <div class="info_icon">
+                        <img class="favorite_img" src="./img/Favoritos.svg" alt="favorite">
+                        <img class="buy_img" src="./img/Compras.svg" alt="buy">
+                    </div>
+                </div>
+                <div class="info-right">
+                    <img class="info_img" src="./img/Perfil-escritora.svg" alt="">
+                    <button class="info_button">Saiba mais</button>
+                </div>
+            </div>
+        </section>
+        <section class="section_extra">
+            <section class="topics_frequent">
+                <p class="text_topic">TÓPICOS VISITADOS RECENTEMENTE</p>
+                <div class="list_topics">
+                    <button class="button_topic">Android</button>
+                    <button class="button_topic">Marketing Digital</button>
+                    <button class="button_topic">Agile</button>
+                    <button class="button_topic">Startups</button>
+                    <button class="button_topic">HTML & CSS</button>
+                    <button class="button_topic">Python</button>
+                    <button class="button_topic"><img src="./img/OO.svg" alt=""></button>
+                    <button class="button_topic">Java</button>
+                </div>
+            </section>
+            <section class="info_contact">
+                <p class="contact_title_main">Fique por dentro das novidades!</p>
+                <p class="contact_title_second">Atualizações de e-books, novos livros, promoções e outros.</p>
+                <input type="text" placeholder="Cadastre seu e-mail">
+            </section>
+        </section>
     </section>
-    <footer>frr</footer>
+    <footer class="main_footer">
+        <p class="text_info_footer">Grupo Alura</p>
+    </footer>
 
     <script type="module">
         import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
@@ -88,10 +155,8 @@
                 prevEl: '.swiper-button-prev',
                 
             },
-
-            // And if we need scrollbar
-     
         });
     </script>
+    <script src="./app/main.js"></script>
 </body>
 </html>
