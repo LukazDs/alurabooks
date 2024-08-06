@@ -21,13 +21,19 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
-    margin-left: 24px;
-    padding: 20px 0;
 }
 .menu_img, .favorite_img, .buy_img, .profile_img {
     width: 46px;
     height: 46px;
+}
+.menu_img {
+    padding: 0 20px;
+    padding: 20px 16px;
+    margin-right: 10px;
+ 
+}
+.menu_img_click {
+    background: linear-gradient(#002F52,#326589);
 }
 .logo_img {
     width: 38px;
@@ -113,8 +119,8 @@ body {
 }
  .swiper {
     width: 100%;
-    height: 290px;
-    margin-top: 16px;
+
+    margin: 16px;
 }
 .main_extra {
     width: 380px;
@@ -290,12 +296,28 @@ body {
  }
  .menu_box {
     width: 304px;
-    height: 298px;
-    background-color: aqua;
     position: absolute;
     top: 86px;
     z-index: 2;
  }
  .menu_none{
     display: none;
+ }
+ .menu_categoria {
+    padding: 22px;
+    background-color: #FFFFFF;
+ }
+ .menu_title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    color: #EB9B00;
+ }
+ .text_categoria {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: rgba(#002F52,#326589);
  }
